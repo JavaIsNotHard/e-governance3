@@ -1,0 +1,70 @@
+/* _content/Egovernance/Views/Account/Login.cshtml.rz.scp.css */
+.form-signin[b-qld16hrk3o] {
+    max-width: 330px;
+    padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within[b-qld16hrk3o] {
+    z-index: 2;
+}
+
+.form-signin input[type="email"][b-qld16hrk3o] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"][b-qld16hrk3o] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+/* _content/Egovernance/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-rie1gwq37h] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-rie1gwq37h] {
+  color: #0077cc;
+}
+
+.btn-primary[b-rie1gwq37h] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-rie1gwq37h], .nav-pills .show > .nav-link[b-rie1gwq37h] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-rie1gwq37h] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-rie1gwq37h] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-rie1gwq37h] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-rie1gwq37h] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-rie1gwq37h] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
