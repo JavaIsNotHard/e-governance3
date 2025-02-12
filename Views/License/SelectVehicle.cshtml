@@ -1,54 +1,22 @@
-@page
-@using Microsoft.AspNetCore.Mvc.TagHelpers
-@model List<VehicleCategory>
+@model List<Egovernance.Models.Vehicle>
 
 @{
+    ViewData["title"] = "someting";
 }
 
-<div class="container mt-4">
-    <h2>Apply for Driving License <span class="text-muted">(चालक अनुमतिपत्र आवेदन)</span></h2>
+<!DOCTYPE html>
 
-    <!-- Progress Bar -->
-    <div class="progress mt-3">
-        <div class="progress-bar bg-success" style="width: 50%;">Step 2</div>
-    </div>
-
-    <div class="d-flex justify-content-between mt-2">
-        <span class="text-success">✔ Terms & Conditions</span>
-        <span class="text-primary fw-bold">License Category</span>
-        <span class="text-muted">Select Office</span>
-        <span class="text-muted">Select Date</span>
-    </div>
-
-    <hr />
-
-    <!-- Category Selection Form -->
-    @{
-        if (Model == null)
-        {
-            <h1>Null Object</h1>
-        }
-        else
-        {
-            <form method="post">
-                <h5>Select Category <span class="text-muted">(वर्ग छनौट गर्नुहोस्)</span> *</h5>
-
-                <div class="row row-cols-2 row-cols-md-4 g-3">
-                    @foreach (var category in Model)
-                    {
-                        <div class="col">
-                            <label class="category-card">
-                                <input type="radio" name="SelectedCategory" value="@category.Code" required/>
-                                <div class="category-content">
-                                    <p>@category.Name</p>
-                                </div>
-                            </label>
-                        </div>
-                    }
-                </div>
-
-                <button type="submit" class="btn btn-primary mt-4">Next</button>
-            </form>
-        }
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    @foreach (var vehicle in @Model)
+    {
+        <h1>@vehicle.name</h1>
+        <input type="radio" name="SelectedCategory" value="@vehicle.name" required />
     }
 </div>
+</body>
+</html>

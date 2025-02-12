@@ -277,3 +277,4 @@
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/obj/Debug/net9.0/scopedcss/Views/Account/Login.cshtml.rz.scp.css
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/obj/Debug/net9.0/compressed/z5pmyedfwa-3zg9zv6fxv.gz
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/obj/Debug/net9.0/compressed/feujx6vy2t-3zg9zv6fxv.gz
+/Users/jibesh/Personal/Project/Egovernance/Egovernance/obj/Debug/net9.0/Egovernance.sourcelink.json

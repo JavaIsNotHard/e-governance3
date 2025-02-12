@@ -7,40 +7,24 @@ namespace Egovernance.Controllers;
 [Authorize]
 public class LicenseController : Controller
 {
-    private readonly ILogger<LicenseController> _logger;
-
-    public LicenseController(ILogger<LicenseController> logger)
-    {
-        _logger = logger;
-    }
     
     [HttpGet]
     public IActionResult SelectVehicle()
     {
-        var categories = new List<VehicleCategory>
-        {
-            new VehicleCategory("K", "Scooter, Moped"),
-            new VehicleCategory("A", "Motorcycle, Scooter, Moped"),
-            new VehicleCategory("B", "Car, Jeep, Delivery Van"),
-            new VehicleCategory("C", "Tempo, Auto Rickshaw"),
-            new VehicleCategory("C1", "E-Rickshaw"),
-            new VehicleCategory("D", "Power Tiller"),
-            new VehicleCategory("E", "Tractor"),
-            new VehicleCategory("H", "Road Roller, Dozer"),
-            new VehicleCategory("H1", "Dozer"),
-            new VehicleCategory("H2", "Road Roller"),
-            new VehicleCategory("I", "Crane, Fire Brigade, Loader"),
-            new VehicleCategory("I1", "Crane"),
-            new VehicleCategory("I2", "Fire Brigade"),
-            new VehicleCategory("I3", "Loader"),
-            new VehicleCategory("J1", "Excavator")
-        };
+        var vehicle1 = new Vehicle() { name = "something", code = "A" };
+        var vehicle2 = new Vehicle() { name = "something", code = "B" };
+        Console.WriteLine(vehicle1.name);
+        Console.WriteLine(vehicle2.name);
+        
+        var Vehicles = new List<Vehicle>() { vehicle1, vehicle2 };
 
-        foreach (var category in categories)
+        foreach (var vehicle in Vehicles)
         {
-            _logger.LogInformation($"Selected category: {category.Name}");
+            Console.WriteLine(vehicle.name);
         }
         
-        return View(categories);
+        return View(Vehicles);
     }
+    
+    
 }

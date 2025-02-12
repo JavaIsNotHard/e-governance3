@@ -77,7 +77,7 @@ public class AccountController : Controller
             return View(model);
         }
         
-        var signInResult = await _signInManager.PasswordSignInAsync(user, model.Password, true, false);
+        var signInResult = await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
 
         if (!signInResult.Succeeded)
         {
