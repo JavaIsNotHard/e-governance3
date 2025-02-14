@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/bycicle.png",
+      "PackagePath": "staticwebassets/images/bycicle.png"
+    },
+    {
+      "Id": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/car.png",
+      "PackagePath": "staticwebassets/images/car.png"
+    },
+    {
+      "Id": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/motorcycle.png",
+      "PackagePath": "staticwebassets/images/motorcycle.png"
+    },
+    {
+      "Id": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/truck.png",
+      "PackagePath": "staticwebassets/images/truck.png"
+    },
+    {
       "Id": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

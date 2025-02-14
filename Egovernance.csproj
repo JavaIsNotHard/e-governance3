@@ -23,10 +23,4 @@
       <_ContentIncludedByDefault Remove="Views\License\SelectVehicle.cshtml" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Compile Update="Views\License\SelectedVehicle.cshtml.cs">
-        <DependentUpon>SelectVehicle.cshtml</DependentUpon>
-      </Compile>
-    </ItemGroup>
-
 </Project>

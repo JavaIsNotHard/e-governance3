@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h71ru8Tphb9jVwN39XjfKKaku6wxtbr73a3AYNMzH+0=",
+  "Hash": "fGmufBcdfIM9XQLj7W3DNHBdXrjA+i2pBZdi29TDMyw=",
   "Source": "Egovernance",
   "BasePath": "_content/Egovernance",
   "Mode": "Default",
@@ -4070,6 +4070,90 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+      "Identity": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/bycicle.png",
+      "SourceId": "Egovernance",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/",
+      "BasePath": "_content/Egovernance",
+      "RelativePath": "images/bycicle#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i9dfrp93ts",
+      "Integrity": "GsC3GEp9qDfnKAIutsFa+3Deh9U4zyiBbnRB8orii3U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/bycicle.png"
+    },
+    {
+      "Identity": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/car.png",
+      "SourceId": "Egovernance",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/",
+      "BasePath": "_content/Egovernance",
+      "RelativePath": "images/car#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "opv3nvosdn",
+      "Integrity": "tGkkxQ9D2BTgWop7uS6N6z2siFdt7kFgZRXc0FY88G4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/car.png"
+    },
+    {
+      "Identity": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/motorcycle.png",
+      "SourceId": "Egovernance",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/",
+      "BasePath": "_content/Egovernance",
+      "RelativePath": "images/motorcycle#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j5hyl5kzw0",
+      "Integrity": "V/SnENmsv3477QWT9RZEGemrdMljp5EKR4l12REU30c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/motorcycle.png"
+    },
+    {
+      "Identity": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/truck.png",
+      "SourceId": "Egovernance",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/",
+      "BasePath": "_content/Egovernance",
+      "RelativePath": "images/truck#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vi6nac4lnb",
+      "Integrity": "OQXlptcIFAb4EB/gHwxBuU4hDfxTFqraw3ggMWHzKVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/truck.png"
+    },
+    {
       "Identity": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/js/site.js",
       "SourceId": "Egovernance",
       "SourceType": "Discovered",
@@ -5712,7 +5796,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5773,7 +5857,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5818,7 +5902,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5873,7 +5957,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5934,7 +6018,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5979,7 +6063,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6034,7 +6118,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6087,7 +6171,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6124,7 +6208,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6171,7 +6255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6224,7 +6308,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6261,7 +6345,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 08:29:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15146,6 +15230,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-F1wMlgb/juW08DFUssW6Pm9EBKfjXXRiSK0F5FgXxJU="
+        }
+      ]
+    },
+    {
+      "Route": "images/bycicle.i9dfrp93ts.png",
+      "AssetFile": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/bycicle.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36772"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GsC3GEp9qDfnKAIutsFa+3Deh9U4zyiBbnRB8orii3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:40:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i9dfrp93ts"
+        },
+        {
+          "Name": "label",
+          "Value": "images/bycicle.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GsC3GEp9qDfnKAIutsFa+3Deh9U4zyiBbnRB8orii3U="
+        }
+      ]
+    },
+    {
+      "Route": "images/bycicle.png",
+      "AssetFile": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/bycicle.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36772"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GsC3GEp9qDfnKAIutsFa+3Deh9U4zyiBbnRB8orii3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:40:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GsC3GEp9qDfnKAIutsFa+3Deh9U4zyiBbnRB8orii3U="
+        }
+      ]
+    },
+    {
+      "Route": "images/car.opv3nvosdn.png",
+      "AssetFile": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/car.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tGkkxQ9D2BTgWop7uS6N6z2siFdt7kFgZRXc0FY88G4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:39:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "opv3nvosdn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/car.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tGkkxQ9D2BTgWop7uS6N6z2siFdt7kFgZRXc0FY88G4="
+        }
+      ]
+    },
+    {
+      "Route": "images/car.png",
+      "AssetFile": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/car.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tGkkxQ9D2BTgWop7uS6N6z2siFdt7kFgZRXc0FY88G4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:39:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tGkkxQ9D2BTgWop7uS6N6z2siFdt7kFgZRXc0FY88G4="
+        }
+      ]
+    },
+    {
+      "Route": "images/motorcycle.j5hyl5kzw0.png",
+      "AssetFile": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/motorcycle.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31822"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V/SnENmsv3477QWT9RZEGemrdMljp5EKR4l12REU30c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:40:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j5hyl5kzw0"
+        },
+        {
+          "Name": "label",
+          "Value": "images/motorcycle.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V/SnENmsv3477QWT9RZEGemrdMljp5EKR4l12REU30c="
+        }
+      ]
+    },
+    {
+      "Route": "images/motorcycle.png",
+      "AssetFile": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/motorcycle.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31822"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V/SnENmsv3477QWT9RZEGemrdMljp5EKR4l12REU30c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:40:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V/SnENmsv3477QWT9RZEGemrdMljp5EKR4l12REU30c="
+        }
+      ]
+    },
+    {
+      "Route": "images/truck.png",
+      "AssetFile": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/truck.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OQXlptcIFAb4EB/gHwxBuU4hDfxTFqraw3ggMWHzKVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:40:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OQXlptcIFAb4EB/gHwxBuU4hDfxTFqraw3ggMWHzKVk="
+        }
+      ]
+    },
+    {
+      "Route": "images/truck.vi6nac4lnb.png",
+      "AssetFile": "/Users/jibesh/Personal/Project/Egovernance/Egovernance/wwwroot/images/truck.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13618"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OQXlptcIFAb4EB/gHwxBuU4hDfxTFqraw3ggMWHzKVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:40:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vi6nac4lnb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/truck.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OQXlptcIFAb4EB/gHwxBuU4hDfxTFqraw3ggMWHzKVk="
         }
       ]
     },
