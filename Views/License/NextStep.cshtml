@@ -1,0 +1,16 @@
+@{
+ViewData["Title"] = "Next Step";
+}
+
+<h2>Next Step</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.SelectedCategory))
+{
+<p>You selected: <strong>@ViewBag.SelectedCategory</strong></p>
+}
+else
+{
+<p>No category selected.</p>
+}
+
+<a href="@Url.Action("Index", "License")" class="btn btn-secondary">Go Back</a>
