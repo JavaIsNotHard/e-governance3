@@ -90,7 +90,7 @@ public class AccountController : Controller
 
         await _userManager.AddClaimAsync(user, new Claim("UserRole", "Admin"));
         
-        return RedirectToAction("SelectVehicle", "License");
+        return RedirectToAction("Index", "License");
 
     }
 
