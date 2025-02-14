@@ -10,6 +10,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddSession();
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
     {
@@ -49,6 +50,8 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseSession();
+app.UseStaticFiles();
 app.MapStaticAssets();
 
 app.MapControllerRoute(
