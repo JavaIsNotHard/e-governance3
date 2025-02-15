@@ -84,6 +84,65 @@ namespace Egovernance.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("Egovernance.Models.LicenseProfile", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("citizenshipNo")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("dateofbirth")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("district")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("firstname")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("lastname")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("province")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Profiles");
+                });
+
+            modelBuilder.Entity("Egovernance.Models.Vehicle", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("code")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("imageUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("isSelected")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Vehicles");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
