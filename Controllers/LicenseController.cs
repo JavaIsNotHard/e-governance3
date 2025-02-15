@@ -9,7 +9,7 @@ public class LicenseController : Controller
 {
     
     [HttpGet]
-    public IActionResult Index()
+    public IActionResult Create()
     {
         var vehicle1 = new Vehicle() { name = "bike", code = "A", imageUrl = "/images/bycicle.png", isSelected = false};
         var vehicle2 = new Vehicle() { name = "scooter", code = "B", imageUrl = "/images/motorcycle.png", isSelected = false};

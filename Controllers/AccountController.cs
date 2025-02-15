@@ -11,6 +11,7 @@ public class AccountController : Controller
     private readonly ILogger<AccountController> _logger;
     private readonly SignInManager<ApplicationUser> _signInManager;
     private readonly UserManager<ApplicationUser> _userManager;
+    private readonly ApplicationDbContext _context;
 
     public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager,
         ILogger<AccountController> logger)
@@ -86,10 +87,18 @@ public class AccountController : Controller
             return View(model);
         }
         
+        var profile = _context.LicenseProfiles.FirstOrDefault(lp => lp.UserId == user.Id);
+        if (profile == null)
+        {
+            ViewBag.HasLicense = false;
+            return RedirectToAction("Create", "LicenseProfile");
+        }
+        
         _logger.LogInformation(user.UserName);
 
         await _userManager.AddClaimAsync(user, new Claim("UserRole", "Admin"));
-        
+
+        ViewBag.HasLicense = true;
         return RedirectToAction("Index", "License");
 
     }

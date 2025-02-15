@@ -1,63 +1,11 @@
-@model List<Vehicle>
-
-@{
-    ViewData["Title"] = "Select Vehicle Category";
-}
-
-<h2>Select Category</h2>
-
-@if (TempData["ErrorMessage"] != null)
+@if (ViewBag.HasLicense)
 {
-    <div class="alert alert-danger" role="alert">
-        @TempData["ErrorMessage"]
-    </div>
+    <h3>Welcome! You can:</h3>
+    <a href="@Url.Action("Create", "License")">Apply for a new license</a>
+    <a href="@Url.Action("Details", "License")">View your license details</a>
 }
-
-<form method="post" action="@Url.Action("SelectVehicle", "License")">
-    <div class="container">
-        <div class="row">
-            @foreach (var category in Model)
-            {
-                <div class="col-md-3">
-                    <label class="category-card">
-                        <input type="radio" name="selectedCategory" value="@category.code" class="category-radio">
-                        <div class="card">
-                            <img src="@category.imageUrl" class="card-img-top" alt="@category.name">
-                            <div class="card-body text-center">
-                                <h5>@category.name</h5>
-                            </div>
-                        </div>
-                    </label>
-                </div>
-            }
-        </div>
-    </div>
-
-    <button type="submit" class="btn btn-primary mt-3">Next</button>
-</form>
-
-<style>
-    .category-card {
-        display: block;
-        cursor: pointer;
-    }
-
-    .card {
-        border: 2px solid transparent;
-        transition: 0.3s;
-    }
-
-    .category-radio {
-        display: none;
-    }
-
-    .category-radio:checked + .card {
-        border-color: blue;
-        background-color: #e0f7fa;
-    }
-
-    .card img {
-        width: 100%;
-        height: auto;
-    }
-</style>
+else
+{
+    <h3>You don't have a license profile.</h3>
+    <a href="@Url.Action("Create", "LicenseProfile")">Create License Profile</a>
+}

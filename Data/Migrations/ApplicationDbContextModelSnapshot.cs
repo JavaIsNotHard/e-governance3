@@ -90,6 +90,10 @@ namespace Egovernance.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("citizenshipNo")
                         .HasColumnType("INTEGER");
 
@@ -104,6 +108,10 @@ namespace Egovernance.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("gender")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("lastname")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -114,7 +122,10 @@ namespace Egovernance.Data.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Profiles");
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("LicenseProfiles");
                 });
 
             modelBuilder.Entity("Egovernance.Models.Vehicle", b =>
@@ -275,6 +286,17 @@ namespace Egovernance.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Egovernance.Models.LicenseProfile", b =>
+                {
+                    b.HasOne("Egovernance.Data.ApplicationUser", "User")
+                        .WithOne("LicenseProfile")
+                        .HasForeignKey("Egovernance.Models.LicenseProfile", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -323,6 +345,12 @@ namespace Egovernance.Data.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Egovernance.Data.ApplicationUser", b =>
+                {
+                    b.Navigation("LicenseProfile")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618
