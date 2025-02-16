@@ -13,6 +13,7 @@ public class LicenseProfile
     public string district { get; set; }
     public DateTime dateofbirth { get; set; }
     public int citizenshipNo { get; set; }
+    public string? selectedVehicle { get; set; }
     
     public string UserId { get; set; }
     public virtual ApplicationUser User { get; set; }

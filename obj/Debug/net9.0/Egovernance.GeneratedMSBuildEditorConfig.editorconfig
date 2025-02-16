@@ -48,12 +48,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/jibesh/Personal/Project/Egovernance/Egovernance/Views/License/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGljZW5zZS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jibesh/Personal/Project/Egovernance/Egovernance/Views/License/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGljZW5zZS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/jibesh/Personal/Project/Egovernance/Egovernance/Views/License/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGljZW5zZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/jibesh/Personal/Project/Egovernance/Egovernance/Views/License/NextStep.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGljZW5zZS9OZXh0U3RlcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jibesh/Personal/Project/Egovernance/Egovernance/Views/LicenseProfile/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGljZW5zZVByb2ZpbGUvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/jibesh/Personal/Project/Egovernance/Egovernance/Views/Shared/Error.cshtml]

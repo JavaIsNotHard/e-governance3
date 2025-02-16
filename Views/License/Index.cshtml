@@ -1,11 +1,3 @@
-@if (ViewBag.HasLicense)
-{
-    <h3>Welcome! You can:</h3>
-    <a href="@Url.Action("Create", "License")">Apply for a new license</a>
-    <a href="@Url.Action("Details", "License")">View your license details</a>
-}
-else
-{
-    <h3>You don't have a license profile.</h3>
-    <a href="@Url.Action("Create", "LicenseProfile")">Create License Profile</a>
-}
+<h3>Welcome! You can:</h3>
+<a href="@Url.Action("Create", "License")">Apply for a new license</a>
+<a href="@Url.Action("Details", "License")">View your license details</a>

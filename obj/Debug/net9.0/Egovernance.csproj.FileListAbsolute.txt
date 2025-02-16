@@ -2,7 +2,6 @@
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/bin/Debug/net9.0/appsettings.json
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/bin/Debug/net9.0/Egovernance.staticwebassets.runtime.json
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/bin/Debug/net9.0/Egovernance.staticwebassets.endpoints.json
-/Users/jibesh/Personal/Project/Egovernance/Egovernance/bin/Debug/net9.0/app.db
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/bin/Debug/net9.0/Egovernance
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/bin/Debug/net9.0/Egovernance.deps.json
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/bin/Debug/net9.0/Egovernance.runtimeconfig.json
@@ -278,3 +277,4 @@
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/obj/Debug/net9.0/compressed/z5pmyedfwa-3zg9zv6fxv.gz
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/obj/Debug/net9.0/compressed/feujx6vy2t-3zg9zv6fxv.gz
 /Users/jibesh/Personal/Project/Egovernance/Egovernance/obj/Debug/net9.0/Egovernance.sourcelink.json
+/Users/jibesh/Personal/Project/Egovernance/Egovernance/bin/Debug/net9.0/app.db

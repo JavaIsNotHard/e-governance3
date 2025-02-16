@@ -3,6 +3,7 @@ using Egovernance.Data;
 using Egovernance.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Egovernance.Controllers;
 
@@ -14,10 +15,11 @@ public class AccountController : Controller
     private readonly ApplicationDbContext _context;
 
     public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager,
-        ILogger<AccountController> logger)
+        ILogger<AccountController> logger, ApplicationDbContext context)
     {
         _userManager = userManager;
         _signInManager = signInManager;
+        _context = context;
         _logger = logger;
     }
 
@@ -68,10 +70,6 @@ public class AccountController : Controller
         var user = await _userManager.FindByNameAsync(model.UsernameOrEmail) ??
                    await _userManager.FindByEmailAsync(model.UsernameOrEmail);
 
-        _logger.LogInformation(user.UserName);
-        _logger.LogInformation(user.Email);
-        _logger.LogInformation(user.PasswordHash);
-        
         if (user == null || !await _userManager.CheckPasswordAsync(user, model.Password))
         {
             ModelState.AddModelError(string.Empty, "Wrong Password");
@@ -87,15 +85,18 @@ public class AccountController : Controller
             return View(model);
         }
         
-        var profile = _context.LicenseProfiles.FirstOrDefault(lp => lp.UserId == user.Id);
-        if (profile == null)
+        // null pointer exception
+        if (_context.LicenseProfiles != null)
         {
-            ViewBag.HasLicense = false;
-            return RedirectToAction("Create", "LicenseProfile");
+            var existingProfile = await _context.LicenseProfiles
+                .FirstOrDefaultAsync(lp => lp.UserId == user.Id);
+
+            if (existingProfile == null)
+            {
+                return RedirectToAction("Create", "LicenseProfile"); // Profile already exists
+            }
         }
         
-        _logger.LogInformation(user.UserName);
-
         await _userManager.AddClaimAsync(user, new Claim("UserRole", "Admin"));
 
         ViewBag.HasLicense = true;

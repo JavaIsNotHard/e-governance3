@@ -1,18 +1,27 @@
-@model TModel
+@model Egovernance.Models.LicenseProfile
 
-@{
-    Layout = null;
+@using (Html.BeginForm("Create", "LicenseProfile", FormMethod.Post))
+{
+    <label>First Name</label>
+    @Html.TextBoxFor(m => m.firstname, new { required = "required" })
+
+    <label>Last Name</label>
+    @Html.TextBoxFor(m => m.lastname, new { required = "required" })
+
+    <label>Gender</label>
+    @Html.DropDownListFor(m => m.gender, new SelectList(new[] { "Male", "Female", "Other" }))
+
+    <label>Province</label>
+    @Html.TextBoxFor(m => m.province)
+
+    <label>District</label>
+    @Html.TextBoxFor(m => m.district)
+
+    <label>Date of Birth</label>
+    @Html.TextBoxFor(m => m.dateofbirth, new { type = "date" })
+
+    <label>Citizenship No</label>
+    @Html.TextBoxFor(m => m.citizenshipNo, new { required = "required" })
+
+    <button type="submit">Save</button>
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>
