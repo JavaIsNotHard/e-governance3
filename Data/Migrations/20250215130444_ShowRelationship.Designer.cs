@@ -3,6 +3,7 @@ using System;
 using Egovernance.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Egovernance.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250215130444_ShowRelationship")]
+    partial class ShowRelationship
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
@@ -118,9 +121,6 @@ namespace Egovernance.Data.Migrations
 
                     b.Property<string>("province")
                         .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("selectedVehicle")
                         .HasColumnType("TEXT");
 
                     b.HasKey("id");
