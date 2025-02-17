@@ -46,11 +46,16 @@ public class LicenseController : Controller
 
     [HttpPost]
     [Route("License/SelectVehicle")]
-    public IActionResult SelectVehicle(string selectedCategory)
+    public IActionResult SelectVehicle(string selectedCategory, DateTime selectedDate, string selectedProvince)
     {
-        if (!string.IsNullOrEmpty(selectedCategory))
+        Console.WriteLine($"selected category {selectedCategory}");
+        Console.WriteLine($"selected date {selectedDate}");
+        Console.WriteLine($"selected province {selectedProvince}");
+        if (!string.IsNullOrEmpty(selectedCategory) && !string.IsNullOrEmpty(selectedProvince) && !string.IsNullOrEmpty(selectedDate.ToString()))
         {
             HttpContext.Session.SetString("selectedVehicle", selectedCategory);
+            HttpContext.Session.SetString("selectedDate", selectedDate.ToString("O"));
+            HttpContext.Session.SetString("selectedProvince", selectedProvince);
             return RedirectToAction("NextStep");
         }
         
@@ -62,6 +67,15 @@ public class LicenseController : Controller
     public async Task<IActionResult> NextStep()
     {
         var selectedCategory = HttpContext.Session.GetString("selectedVehicle");
+        var selectedProvince = HttpContext.Session.GetString("selectedProvince");
+        
+        var storedDate = HttpContext.Session.GetString("selectedDate");
+        DateTime? selectedDate = null;
+        if (!string.IsNullOrEmpty(storedDate) && DateTime.TryParse(storedDate, out DateTime parsedDate))
+        {
+            selectedDate = parsedDate;
+        }
+        
         Console.WriteLine($"Selected Category is {selectedCategory}");
         var user = await _userManager.GetUserAsync(User);
 
@@ -74,10 +88,12 @@ public class LicenseController : Controller
         
         var userProfile = _context.LicenseProfiles.FirstOrDefault(x => x.UserId == user.Id);
         userProfile.selectedVehicle = selectedCategory;
+        userProfile.selectedProvince = selectedProvince;
+        userProfile.selectedOfficeVisit = selectedDate;
         _context.LicenseProfiles.Update(userProfile);
         await _context.SaveChangesAsync();
         
-        return View();
+        return RedirectToAction("Index","License");
     }
     
     

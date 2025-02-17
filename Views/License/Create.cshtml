@@ -33,6 +33,58 @@
         </div>
     </div>
 
+    <div class="mb-3">
+        <label for="selectedProvince" class="form-label"><strong>Office Selection ( कार्यालय चयन )</strong></label>
+        <select id="officeSelection" name="selectedProvince" class="form-control" required>
+            <option value="">Select appropriate office</option>
+            <option value="9">Transport Management Office, Baglung</option>
+            <option value="16">Transport Management Service Office, Bardibas</option>
+            <option value="3059">Transport Management Service Office, Biratnagar</option>
+            <option value="5">Transport Management Office, Birgunj</option>
+            <option value="6">Transport Management Office, Birtamode Jhapa</option>
+            <option value="8">Transport Management Office, Rupandehi</option>
+            <option value="28">Transport Management Office, Chabahil</option>
+            <option value="3068">Transport Management Service Office, Chaurjahari</option>
+            <option value="1">Transport Management Office, Ekantakuna</option>
+            <option value="3060">Transport Management Service Office, Gaighat</option>
+            <option value="12">Transport Management Office, Nepalgunj</option>
+            <option value="7">Transport Management Office, Pokhara Kaski</option>
+            <option value="26">Transport Management Office, RadheRadhe</option>
+            <option value="3053">Transport Management Office Banepa</option>
+            <option value="10">Transport Management Office, Dang Rapti</option>
+            <option value="13">Transport Management Office, Dhangadi</option>
+            <option value="3070">Transport Management Office, Dumre</option>
+            <option value="3058">Transport Management Office, Hetauda</option>
+            <option value="2">Transport Management Office, Itahari</option>
+            <option value="4">Transport Management Office, Janakpur</option>
+            <option value="3075">Transport Management Service Office, Kalaiya</option>
+            <option value="14">Transport Management Office, Kanchanpur</option>
+            <option value="3063">Transport Management Office, Kawasoti</option>
+            <option value="3071">Transport Management Office, Khurkot</option>
+            <option value="3">Transport Management Office, Lahan</option>
+            <option value="3074">Transport Management Service Office, Sarlahi</option>
+            <option value="3055">Transport Management Office, Surkhet</option>
+            <option value="27">Transport Management Office, Thulobharyang</option>
+            <option value="3056">Transport Management Service Office, Dadeldhura</option>
+            <option value="3061">Transport Management Service Office, Dhankuta</option>
+            <option value="3057">Transport Management Service Office, Doti</option>
+            <option value="3062">Transport Management Service Office, Ilam</option>
+            <option value="3059">Transport Management Service Office, Jumla</option>
+            <option value="3073">Transport Management Service Office, Nawalparasi</option>
+            <option value="3072">Transport Management Service Office, Palpa</option>
+            <option value="3067">Transport Management Service Office, Chitwan</option>
+            <option value="3065">Transport Management Service Office, Gaur</option>
+            <option value="3069">Transport Management Service Office, Okhaldhunga</option>
+            <option value="3069">Transport Management Service Office, Rajbiraj</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="selectedDate" class="form-label"><strong>Select Desired Date for Office Visit ( कार्यालय जाने मिति चयन गर्नुहोस् )</strong></label>
+        <input type="date" id="selectedDate" name="selectedDate" class="form-control" required min="@DateTime.Today.ToString("yyyy-MM-dd")">
+    </div>
+
+
     <button type="submit" class="btn btn-primary mt-3">Next</button>
 </form>
 

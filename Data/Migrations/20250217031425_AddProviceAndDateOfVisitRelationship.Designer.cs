@@ -3,6 +3,7 @@ using System;
 using Egovernance.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Egovernance.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250217031425_AddProviceAndDateOfVisitRelationship")]
+    partial class AddProviceAndDateOfVisitRelationship
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
@@ -90,6 +93,9 @@ namespace Egovernance.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("ProvideAndDateOfVisitId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -131,10 +137,32 @@ namespace Egovernance.Data.Migrations
 
                     b.HasKey("id");
 
+                    b.HasIndex("ProvideAndDateOfVisitId");
+
                     b.HasIndex("UserId")
                         .IsUnique();
 
                     b.ToTable("LicenseProfiles");
+                });
+
+            modelBuilder.Entity("Egovernance.Models.ProvideAndDateOfVisit", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("DateOfVisit")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Province")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("availableSlots")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProvideAndDateOfVisit");
                 });
 
             modelBuilder.Entity("Egovernance.Models.Vehicle", b =>
@@ -297,6 +325,12 @@ namespace Egovernance.Data.Migrations
 
             modelBuilder.Entity("Egovernance.Models.LicenseProfile", b =>
                 {
+                    b.HasOne("Egovernance.Models.ProvideAndDateOfVisit", "provinceanddov")
+                        .WithMany("LicenseProfiles")
+                        .HasForeignKey("ProvideAndDateOfVisitId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("Egovernance.Data.ApplicationUser", "User")
                         .WithOne("LicenseProfile")
                         .HasForeignKey("Egovernance.Models.LicenseProfile", "UserId")
@@ -304,6 +338,8 @@ namespace Egovernance.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+
+                    b.Navigation("provinceanddov");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -361,6 +397,11 @@ namespace Egovernance.Data.Migrations
                 {
                     b.Navigation("LicenseProfile")
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Egovernance.Models.ProvideAndDateOfVisit", b =>
+                {
+                    b.Navigation("LicenseProfiles");
                 });
 #pragma warning restore 612, 618
         }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Egovernance")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5de8e6c46a29dcdda0ede306c51972151895ce51")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d6159a32f10d7a5ea26873ab80dd31bf1b69ff4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Egovernance")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Egovernance")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

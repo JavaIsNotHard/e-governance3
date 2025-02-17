@@ -26,5 +26,6 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
             .WithOne(lp => lp.User)
             .HasForeignKey<LicenseProfile>(lp => lp.UserId)
             .OnDelete(DeleteBehavior.Cascade);
+        
     }
 }
