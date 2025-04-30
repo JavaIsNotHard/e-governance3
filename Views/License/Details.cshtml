@@ -1,0 +1,45 @@
+@model Egovernance.Models.LicenseProfile
+
+@{
+    ViewBag.Title = "Applicant Details";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Adjust based on your project
+}
+
+<div class="container mt-5">
+    <h2>Applicant License Details</h2>
+
+    <div class="card shadow p-4 mb-4">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Citizenship No:</strong> @Model.citizenshipNo
+            </div>
+            <div class="col-md-6">
+                <strong>Gender:</strong> @Model.gender
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>First Name:</strong> @Model.firstname
+            </div>
+            <div class="col-md-6">
+                <strong>Last Name:</strong> @Model.lastname
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Date of Birth:</strong> @Model.dateofbirth
+            </div>
+            <div class="col-md-6">
+                <strong>District:</strong> @Model.district
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <strong>Province:</strong> @Model.province
+            </div>
+        </div>
+    </div>
+</div>

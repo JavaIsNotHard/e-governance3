@@ -63,6 +63,20 @@ public class LicenseController : Controller
         return RedirectToAction("Index", "License");
     }
     
+    public async Task<IActionResult> Details()
+    {
+        var user = await _userManager.GetUserAsync(User);
+
+        if (user == null)
+        {
+            return Challenge(); 
+        }
+
+        var userProfile = _context.LicenseProfiles.FirstOrDefault(x => x.UserId == user.Id);
+
+        return View(userProfile);
+    }
+    
     [HttpGet]
     public async Task<IActionResult> NextStep()
     {
