@@ -1,27 +1,45 @@
+
 @model Egovernance.Models.LicenseProfile
 
 @using (Html.BeginForm("Create", "LicenseProfile", FormMethod.Post))
 {
-    <label>First Name</label>
-    @Html.TextBoxFor(m => m.firstname, new { required = "required" })
-
-    <label>Last Name</label>
-    @Html.TextBoxFor(m => m.lastname, new { required = "required" })
-
-    <label>Gender</label>
-    @Html.DropDownListFor(m => m.gender, new SelectList(new[] { "Male", "Female", "Other" }))
-
-    <label>Province</label>
-    @Html.TextBoxFor(m => m.province)
-
-    <label>District</label>
-    @Html.TextBoxFor(m => m.district)
-
-    <label>Date of Birth</label>
-    @Html.TextBoxFor(m => m.dateofbirth, new { type = "date" })
-
-    <label>Citizenship No</label>
-    @Html.TextBoxFor(m => m.citizenshipNo, new { required = "required" })
-
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 600px;">
+        <div>
+            <label>First Name</label><br />
+            @Html.TextBoxFor(m => m.firstname, new { required = "required" })
+        </div>
+        
+        <div>
+            <label>Last Name</label><br />
+            @Html.TextBoxFor(m => m.lastname, new { required = "required" })
+        </div>
+        
+        <div>
+            <label>Gender</label><br />
+            @Html.DropDownListFor(m => m.gender, new SelectList(new[] { "Male", "Female", "Other" }))
+        </div>
+        
+        <div>
+            <label>Province</label><br />
+            @Html.TextBoxFor(m => m.province)
+        </div>
+        
+        <div>
+            <label>District</label><br />
+            @Html.TextBoxFor(m => m.district)
+        </div>
+        
+        <div>
+            <label>Date of Birth</label><br />
+            @Html.TextBoxFor(m => m.dateofbirth, new { type = "date" })
+        </div>
+        
+        <div>
+            <label>Citizenship No</label><br />
+            @Html.TextBoxFor(m => m.citizenshipNo, new { required = "required" })
+        </div>
+    </div>
+    
+    <br />
     <button type="submit">Save</button>
 }
