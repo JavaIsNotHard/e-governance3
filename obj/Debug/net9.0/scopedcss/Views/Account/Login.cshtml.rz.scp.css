@@ -1,20 +1,28 @@
-.form-signin[b-qld16hrk3o] {
-    max-width: 330px;
+.form-signin[b-nfh4kn1d6j] {
+    max-width: 395px;
     padding: 1rem;
 }
 
-.form-signin .form-floating:focus-within[b-qld16hrk3o] {
+.form-signin .form-floating:focus-within[b-nfh4kn1d6j] {
     z-index: 2;
 }
 
-.form-signin input[type="email"][b-qld16hrk3o] {
+.form-signin input[type="email"][b-nfh4kn1d6j] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.form-signin input[type="password"][b-qld16hrk3o] {
+.form-signin input[type="password"][b-nfh4kn1d6j] {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+.login-container[b-nfh4kn1d6j] {
+    background-color: antiquewhite; /* Replace with your preferred color */
+    padding: 2rem; /* Adjust spacing inside the container */
+    border-radius: 8px; /* Optional: Rounded corners */
+    max-width: 650px; /* Optional: Constrain width */
+    margin: 0 auto; /* Center horizontally */
+
 }

@@ -1,5 +1,5 @@
 .form-signin {
-    max-width: 330px;
+    max-width: 395px;
     padding: 1rem;
 }
 
@@ -17,4 +17,12 @@
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+.login-container {
+    background-color: antiquewhite; /* Replace with your preferred color */
+    padding: 2rem; /* Adjust spacing inside the container */
+    border-radius: 8px; /* Optional: Rounded corners */
+    max-width: 650px; /* Optional: Constrain width */
+    margin: 0 auto; /* Center horizontally */
+
 }

@@ -2,26 +2,82 @@
 
 @using (Html.BeginForm("Create", "LicenseProfile", FormMethod.Post))
 {
-    <label>First Name</label>
-    @Html.TextBoxFor(m => m.firstname, new { required = "required" })
+<div class="form-container">
+    <div class="form-group">
+        <label>First Name</label>
+        @Html.TextBoxFor(m => m.firstname, new { @class = "form-control", required = "required" })
+    </div>
 
-    <label>Last Name</label>
-    @Html.TextBoxFor(m => m.lastname, new { required = "required" })
+    <div class="form-group">
+        <label>Last Name</label>
+        @Html.TextBoxFor(m => m.lastname, new { @class = "form-control", required = "required" })
+    </div>
 
-    <label>Gender</label>
-    @Html.DropDownListFor(m => m.gender, new SelectList(new[] { "Male", "Female", "Other" }))
+    <div class="form-group">
+        <label>Gender</label>
+        @Html.DropDownListFor(m => m.gender, new SelectList(new[] { "Male", "Female", "Other" }), new { @class = "form-control" })
+    </div>
 
-    <label>Province</label>
-    @Html.TextBoxFor(m => m.province)
+    <div class="form-group">
+        <label>Province</label>
+        @Html.TextBoxFor(m => m.province, new { @class = "form-control" })
+    </div>
 
-    <label>District</label>
-    @Html.TextBoxFor(m => m.district)
+    <div class="form-group">
+        <label>District</label>
+        @Html.TextBoxFor(m => m.district, new { @class = "form-control" })
+    </div>
 
-    <label>Date of Birth</label>
-    @Html.TextBoxFor(m => m.dateofbirth, new { type = "date" })
+    <div class="form-group">
+        <label>Date of Birth</label>
+        @Html.TextBoxFor(m => m.dateofbirth, new { type = "date", @class = "form-control" })
+    </div>
 
-    <label>Citizenship No</label>
-    @Html.TextBoxFor(m => m.citizenshipNo, new { required = "required" })
+    <div class="form-group">
+        <label>Citizenship No</label>
+        @Html.TextBoxFor(m => m.citizenshipNo, new { @class = "form-control", required = "required" })
+    </div>
 
-    <button type="submit">Save</button>
+    <button type="submit" class="submit-button">Save</button>
+</div>
+
+<style>
+    .form-container {
+        background-color: antiquewhite;
+        padding: 2rem;
+        border-radius: 8px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    label {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .form-control {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .submit-button {
+        padding: 0.7rem 1.5rem;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+</style>
 }
